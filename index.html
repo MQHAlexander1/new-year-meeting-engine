@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OutreachAI Black Friday: the New Year Meeting Engine</title>
+  <meta name="description" content="Start now, test before the holidays, and come back in January with a client acquisition engine that's already booking meetings. OutreachAI's Black Friday offer for recruitment firms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#0e0f12; --panel:#17191e; --line:rgba(255,255,255,0.10); --text:#f4f4f5; --dim:#b4b6bd; --muted:#82858e; --accent:#f5b83d; --accent-2:#ff8a3d; --ok:#5fd39a; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { background:var(--bg); color:var(--text); font-family:'Inter',system-ui,sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased; }
+    a { color:var(--accent); }
+    .wrap { max-width:760px; margin:0 auto; padding:0 16px; }
+    header { padding:20px 0; display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-weight:800; letter-spacing:-0.02em; font-size:18px; }
+    .logo span { color:var(--accent); }
+    .badge { font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#111; background:linear-gradient(135deg,var(--accent),var(--accent-2)); border-radius:999px; padding:6px 12px; }
+    .hero { padding:40px 0 30px; }
+    .hero .kicker { color:var(--accent); font-weight:700; font-size:14px; letter-spacing:0.08em; text-transform:uppercase; }
+    .hero h1 { font-size:46px; line-height:1.05; letter-spacing:-0.035em; font-weight:800; margin-top:10px; }
+    .hero p { color:var(--dim); font-size:18px; margin-top:16px; max-width:620px; }
+    .cta { display:inline-block; margin-top:24px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#111; font-weight:800; font-size:17px; padding:15px 26px; border-radius:12px; text-decoration:none; }
+    .cta-note { color:var(--muted); font-size:14px; margin-top:10px; }
+    section { padding:36px 0; border-top:1px solid var(--line); }
+    h2 { font-size:28px; letter-spacing:-0.025em; line-height:1.15; font-weight:800; }
+    h2 + p { color:var(--dim); margin-top:10px; font-size:17px; }
+    .stages { display:grid; gap:12px; margin-top:22px; }
+    .stage { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; display:grid; grid-template-columns:120px minmax(0,1fr); gap:16px; }
+    .stage .when { color:var(--accent); font-weight:700; font-size:14px; }
+    .stage h3 { font-size:17px; margin-bottom:4px; }
+    .stage p { color:var(--dim); font-size:15px; }
+    ul.list { list-style:none; margin-top:18px; display:grid; gap:10px; }
+    ul.list li { padding-left:28px; position:relative; color:var(--dim); font-size:16px; }
+    ul.list li::before { content:"✓"; position:absolute; left:0; color:var(--ok); font-weight:800; }
+    ul.list b { color:var(--text); }
+    .weeks { margin-top:20px; background:var(--panel); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+    .weeks div { display:flex; justify-content:space-between; gap:12px; padding:13px 18px; border-top:1px solid var(--line); font-size:15px; color:var(--dim); }
+    .weeks div:first-child { border-top:0; }
+    .weeks b { color:var(--text); white-space:nowrap; }
+    .proof { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:22px; }
+    .proof > div { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px; }
+    .proof .num { font-size:30px; font-weight:800; letter-spacing:-0.03em; color:var(--accent); }
+    .proof p { color:var(--dim); font-size:14.5px; margin-top:4px; }
+    blockquote { margin-top:16px; background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:14px; padding:18px 20px; font-size:17px; }
+    blockquote cite { display:block; margin-top:10px; color:var(--muted); font-style:normal; font-size:14px; }
+    .final { text-align:center; padding:48px 0 60px; }
+    .final p { color:var(--dim); margin:10px auto 0; max-width:540px; }
+    footer { border-top:1px solid var(--line); padding:22px 0 30px; color:var(--muted); font-size:13px; text-align:center; }
+    @media (max-width:640px) { .hero h1 { font-size:34px; } .hero p { font-size:16px; } .stage { grid-template-columns:minmax(0,1fr); gap:4px; } .proof { grid-template-columns:minmax(0,1fr); } .cta { display:block; text-align:center; } h2 { font-size:24px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Outreach<span>AI</span></div>
+      <div class="badge">Black Friday · closes Nov 27</div>
+    </header>
+
+    <div class="hero">
+      <div class="kicker">The New Year Meeting Engine</div>
+      <h1>Do the testing now. Come back in January to a calendar that's already filling.</h1>
+      <p>Most recruitment firms switch off outbound over the holidays and start again in January. They spend January and February testing, and don't see meetings until March. Start now and that testing happens before Christmas, so you start 2027 booking meetings with new clients.</p>
+      <a class="cta" href="https://calendly.com/michael-qq8/30-minute-consultation">Book a 30-minute call with Michael</a>
+      <p class="cta-note">We'll go through the details and pricing on the call.</p>
+    </div>
+
+    <section>
+      <h2>8 weeks of done-for-you client acquisition, starting now</h2>
+      <p>We run outbound for you on LinkedIn and email. You approve the targeting and every message before anything goes out.</p>
+      <div class="stages">
+        <div class="stage"><div class="when">Weeks 1 to 2</div><div><h3>Foundation</h3><p>We agree your target clients and the roles you fill, build the lists, write the copy, and set up and warm separate sending domains so your main domain is never at risk.</p></div></div>
+        <div class="stage"><div class="when">Rest of 2026</div><div><h3>Test</h3><p>Outreach goes live at low volume. We test segments and messages, see what gets replies, and cut what doesn't. Every positive reply comes straight to you.</p></div></div>
+        <div class="stage"><div class="when">January</div><div><h3>Scale</h3><p>When you're back, volume moves to the segments and messages that already work, so you start the year with meetings instead of guesswork.</p></div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What's included</h2>
+      <ul class="list">
+        <li><b>Targeting and lists:</b> companies with a live reason to hire (new and reposted roles, backfills, funding, leadership changes) and the person who owns each hire, with a checked email.</li>
+        <li><b>LinkedIn and email outreach</b> sent as you, with copy that sounds like you, not a template.</li>
+        <li><b>Separate sending domains and inboxes</b>, set up and warmed for you.</li>
+        <li><b>Replies handled and meetings booked</b> onto your calendar.</li>
+        <li><b>Everything in Slack</b>, so you can see what's going out and what's coming back.</li>
+        <li><b>Your lists, domains and data stay yours.</b></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why now, not January</h2>
+      <p>Decision-makers don't disappear in December. Many are on LinkedIn more, catching up and planning next year's hiring, while most of your competitors have gone quiet. Holiday LinkedIn campaigns can double client meetings, more like 2 to 4 qualified meetings a week.</p>
+      <p style="color:var(--dim);margin-top:12px;font-size:17px">The earlier you start, the more weeks of work are done before Christmas:</p>
+      <div class="weeks">
+        <div><span>Start the week of November 16</span><b>5 weeks</b></div>
+        <div><span>Start the week of November 23</span><b>4 weeks</b></div>
+        <div><span>Start the week of November 30</span><b>3 weeks</b></div>
+      </div>
+      <p style="color:var(--muted);margin-top:10px;font-size:14px">Black Friday pricing is open until November 27. We take a limited number of new firms each week so every launch gets proper attention.</p>
+    </section>
+
+    <section>
+      <h2>Results we've delivered</h2>
+      <div class="proof">
+        <div><div class="num">39</div><p>sales calls booked for our own firm in October, using the same LinkedIn outreach we'll run for you.</p></div>
+        <div><div class="num">2x</div><p>reply rate from tightly targeted segments versus a broad list, in a 90-day campaign for a boutique executive search firm, with a 1.2% bounce rate.</p></div>
+      </div>
+      <blockquote>"When I first met Mike, I immediately knew he was different. Partnering with him has been one of the best decisions, and I can confidently say he delivers."<cite>Misha Yarmolich, CEO and Owner</cite></blockquote>
+      <p style="color:var(--dim);margin-top:14px;font-size:15px">More results: <a href="https://outreachai.co">outreachai.co</a></p>
+    </section>
+
+    <div class="final">
+      <h2>Start 2027 with meetings already booked</h2>
+      <p>30 minutes. We'll look at who you want to reach, what we'd test first, and the Black Friday pricing.</p>
+      <a class="cta" href="https://calendly.com/michael-qq8/30-minute-consultation">Book a call with Michael</a>
+    </div>
+  </div>
+  <footer>OutreachAI · Client acquisition for recruitment firms · Michael Alexander, Founder</footer>
+</body>
+</html>
